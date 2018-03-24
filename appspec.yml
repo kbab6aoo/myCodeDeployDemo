@@ -14,11 +14,11 @@ permissions:
 hooks:
    BeforeInstall:
     - location: scripts/installapache.sh
-      runas: ubuntu
+      runas: jaghousr
     - location: scripts/startapache.sh
-      runas: root
+      runas: jaghousr
     - location: scripts/removefile.sh
-      runas: root
+      runas: jaghousr
    AfterInstall:
     - location: scripts/restartapache.sh
-      runas: root
+      runas: jaghousr
